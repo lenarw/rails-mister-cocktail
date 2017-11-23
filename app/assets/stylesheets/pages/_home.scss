@@ -1,1 +1,30 @@
-// Specific CSS for your home-page
+ul {
+}
+
+.word-spacing{
+  list-style-type: none;
+  word-spacing: 30px;
+}
+
+.inline{
+  display:inline;
+}
+
+h1 {
+  font-size:22px;
+  text-align: center;
+}
+
+h3 {
+  font-size:22px;
+}
+
+a{
+  color:#387E89;
+  transition:0.2s;
+}
+
+a:hover{
+  color:#111;
+  text-decoration:none;
+}

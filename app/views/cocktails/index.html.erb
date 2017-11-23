@@ -1,0 +1,7 @@
+<h1>Credit charge, Kermit the Frog, margaritas?</h1>
+<br/>
+<ul class="word-spacing">
+  <% @cocktails.each do |cocktail| %>
+  <li class="inline"><%= link_to cocktail.name, cocktail_path(cocktail) %></li> /
+  <% end %>
+</ul>

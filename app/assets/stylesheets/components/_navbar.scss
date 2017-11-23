@@ -15,6 +15,20 @@
   height: 50px;
 }
 
+#title{
+  font-size:20px;
+}
+
+/* Title */
+.navbar-wagon-title {
+  top:-1px;
+  position:absolute;
+  text-align: center;
+  color:#EF8345;
+  width:200px;
+  margin-left:calc(50% - 100px);
+}
+
 /* User Avatar */
 .navbar-wagon .avatar {
   height: 35px;
