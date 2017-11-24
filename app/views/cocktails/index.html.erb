@@ -1,7 +1,19 @@
 <h1>Credit charge, Kermit the Frog, margaritas?</h1>
 <br/>
-<ul class="word-spacing">
-  <% @cocktails.each do |cocktail| %>
-  <li class="inline"><%= link_to cocktail.name, cocktail_path(cocktail) %></li> /
-  <% end %>
-</ul>
+
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card"
+          style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+                 url('<%= cl_image_path cocktail.path, height: 180, width: 370, crop: :fill %>')">
+        <div class="card-description">
+          <%= link_to cocktail.name, cocktail_path(cocktail) %>
+        </div>
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

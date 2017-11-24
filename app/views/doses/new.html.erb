@@ -1,8 +1,8 @@
 <h3>New dose?</h3>
 <%= simple_form_for([@cocktail, @dose]) do |f| %>
   <div class="form-inputs">
-    <%= f.input :description %>
-    <%= f.collection_select :ingredient_id, Ingredient.order(:name),:id,:name, include_blank: false %>
+    <%= f.collection_select :ingredient_id, Ingredient.order(:name),:id,:name, include_blank: false %><br/>
+    <%= f.input :description, label: "Quantity", class: "form-space"  %>
   </div>
   <br>
   <div class="form-actions">

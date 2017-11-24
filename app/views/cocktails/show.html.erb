@@ -1,5 +1,8 @@
-<h1><%= @cocktail.name %></h1>
+<h1><% if @cocktail.photo? %>
+  <%= cl_image_tag @cocktail.photo.path %>
+<% end %><br/><br/><%= @cocktail.name %></h1>
 <br/>
+
 <h3>Ingredients</h3>
 <ul>
   <% @doses.each do |dose| %>
